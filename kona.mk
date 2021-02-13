@@ -77,35 +77,11 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbluetooth_qti \
-    libbtconfigstore \
-    bt_configstore.conf
-
-PRODUCT_PACKAGES += \
-    com.qualcomm.qti.bluetooth_audio@1.0 \
-    vendor.qti.hardware.bluetooth_audio@2.0 \
-    vendor.qti.hardware.btconfigstore@1.0 \
-    vendor.qti.hardware.btconfigstore@2.0
-
-# Configstore
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.capabilityconfigstore@1.0
+    libbluetooth_qti
 
 # Cryptfs
 PRODUCT_PACKAGES += \
-    libcryptfs_hw \
-    vendor.qti.hardware.cryptfshw@1.0
-
-# Display
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libgralloc.qti \
-    libqdMetaData \
-    libqdMetaData.system \
-    libvulkan \
-    vendor.display.config@1.0 \
-    vendor.display.config@2.0 \
-    vendor.qti.hardware.display.composer@3.0
+    libcryptfs_hw
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -133,10 +109,6 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
-
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl.kona
 
 # Media
 PRODUCT_PACKAGES += \
