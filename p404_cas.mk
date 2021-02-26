@@ -20,7 +20,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Inherit device configuration
-$(call inherit-product, device/xiaomi/cmi/kona.mk)
+$(call inherit-product, device/xiaomi/cas/kona.mk)
 
 # Inherit common 404 configuration
 $(call inherit-product, vendor/404/configs/common.mk)
@@ -29,10 +29,10 @@ $(call inherit-product, vendor/google/pixel/config.mk)
 $(call inherit-product, vendor/google/gms/gapps.mk)
 
 # Override build properties
-PRODUCT_NAME := p404_cmi
-PRODUCT_DEVICE := cmi
+PRODUCT_NAME := p404_cas
+PRODUCT_DEVICE := cas
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI 10 Pro
+PRODUCT_MODEL := MI 10 Ultra
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
